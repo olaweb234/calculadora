@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+<div id="container">
+    <p id="resultado"></p>
+    <table>
+        <tr>
+            <td><button onclick="apagar()">C</button></td>
+            <td><button>M</button></td>
+            <td><button onclick="porcentagem()">%</button></td>
+            <td><button onclick="evento('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="evento('7')">7</button></td>
+            <td><button onclick="evento('8')">8</button></td>
+            <td><button onclick="evento('9')">9</button></td>
+            <td><button onclick="evento('X')">X</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="evento('4')">4</button></td>
+            <td><button onclick="evento('5')">5</button></td>
+            <td><button onclick="evento('6')">6</button></td>
+            <td><button onclick="evento('-')">-</button></td>
+
+        </tr>
+        <tr>
+            <td><button onclick="evento('1')">1</button></td>
+            <td><button onclick="evento('2')">2</button></td>
+            <td><button onclick="evento('3')">3</button></td>
+            <td><button onclick="evento('+')">+</button></td>
+
+        </tr>
+        <tr>
+            <td><button onclick="evento('.')">.</button></td>
+            <td><button onclick="evento('0')">0</button></td>
+            <td><button onclick="deletar()">del</button></td>
+            <td><button onclick="tudo()">=</button></td>
+        </tr>
+    </table>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
